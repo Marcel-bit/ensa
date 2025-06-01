@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vrednost</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../slogi/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <header class="header header--dark">
+        <div class="center header-inner">
+          <a href="../index/index.html">
+            <img
+              src="../../static/logo-1.png"
+              alt=""
+              width="200px"
+              height="auto"
+            />
+          </a>
+          <ul class="nav-links">
+            <li><a href="../temelji/temelji.html">temelji</a></li>
+            <li><a href="../osebe/osebe.html">osebe</a></li>
+            <li class="dropdown">
+              <a>podjetje</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="../podjetje/tekmovalna-prednost.html"
+                    >Tekmovalna prednost</a
+                  >
+                </li>
+                <li><a href="../podjetje/finance.html">Finance</a></li>
+                <li>
+                  <a href="../podjetje/vodstvo.html">Vodstvo</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a>Nakup</a>
+              <ul class="sub-menu">
+                <li><a href="../nakup/nakup.html">Nakup</a></li>
+                <li><a href="../nakup/vrednost.html">Vrednost</a></li>
+                <li><a href="../nakup/cena.html">Cena</a></li>
+              </ul>
+            </li>
+            <li><a href="../lastnosti/lastnosti.html">lastnosti</a></li>
+            <li><a href="../prodaja/prodaja.html">prodaja</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero hero--dark">
+          <div class="center intro-text">
+            <div class="hero-text">
+              <h2>Vrednost delnice</h2>
+              <p>
+                Vrednost delnice je sedanja vrednost vseh prihodnjih denarnih
+                tokov, ki jih bo podjetje ustvarilo v svoji življenjski dobi,
+                prilagojena za primerno obrestno mero, ki odraža tveganje in
+                časovno vrednost denarja. Zato pri natančnem določanju cene
+                delnice združujemo naše znanje in osnovno matematiko.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="hero cards--light">
+          <div class="center-column intro-text">
+            <h1 class="cards-title">Izračun vrednosti delnice</h1>
+            <div class="hero-text">
+              <form name="vrednost" action="" method="post">
+                Letošnji dobiček:
+                <input type="text" name="dobicek" /> <br />Rast dobičkov
+                podjetja v %: <input type="text" name="rast" /> <br />Diskont v
+                %: <input type="text" name="diskont" /><br />
+                Število let:
+                <input type="text" name="leta" /><br />
+                <input type="submit" value="Pošlji" />
+              </form>
+            </div>
+            <div class="gurufocus">
+              <h1 class="cards-title">
+                Kalkulator vrednosti delnice GuruFocus:
+              </h1>
+              <iframe
+                src="https://www.gurufocus.com/dcf-calculator"
+                width="100%"
+                height="600"
+              >
+              </iframe>
+            </div>
+            <table border="1" id="dcf">
+              <caption>
+                <em>Izračun notranje vrednosti Coca-Cole</em>
+              </caption>
+
+              <thead>
+                <tr>
+                  <th colspan="2">Obdobje</th>
+                  <th colspan="2">Metrike vrednotenja</th>
+                </tr>
+                <tr>
+                  <th>Leto</th>
+                  <th>Prosti denarni tok (PDT, $M)</th>
+                  <th>Diskontni faktor (10%)</th>
+                  <th>Sedanja vrednost ($M)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023</td>
+                  <td>9.500</td>
+                  <td>0,9091</td>
+                  <td>8.636</td>
+                </tr>
+                <tr>
+                  <td>2024</td>
+                  <td>10.000</td>
+                  <td>0,8264</td>
+                  <td>8.264</td>
+                </tr>
+                <tr>
+                  <td>2025</td>
+                  <td>10.500</td>
+                  <td>0,7513</td>
+                  <td>7.889</td>
+                </tr>
+                <tr>
+                  <td>Končna vrednost</td>
+                  <td>150.000</td>
+                  <td>0,7513</td>
+                  <td>112.695</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2">Skupna notranja vrednost</td>
+                  <td colspan="2"><b>137.484 $M</b></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </section>
+      </main>
+      <div class="space"></div>
+      <footer class="footer--dark footer">© Marcel</footer>
+      <script></script>
+    </div>
+  </body>
+</html>

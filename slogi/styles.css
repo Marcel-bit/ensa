@@ -48,6 +48,16 @@
   width: 100%;
 }
 
+.center-column {
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+}
+
 .header {
   padding: 20px;
 }
@@ -147,6 +157,22 @@
   max-width: 100px;
   height: auto;
 }
+.cards-cards .card p {
+  margin: 1rem 0.5rem;
+  text-align: left;
+}
+
+.intro-text {
+  padding: 3rem 2rem;
+}
+
+.intro-text .hero-text h2 {
+  margin-bottom: 1rem;
+}
+
+.intro-text .hero-text p {
+  margin-bottom: 0.5rem;
+}
 
 .testimonial {
   padding: 40px 0;
@@ -234,7 +260,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 }
 /* Responsive Design */
@@ -368,4 +394,153 @@ ul li a:hover:before {
 ul li a:hover:after {
   width: 50%;
   transform: translateX(-100%);
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 45rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.slika {
+  padding: 5px;
+  background-color: #ffce63;
+  border: 1px solid #f1bb56;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  gap: "20px";
+}
+
+.background {
+  background-image: url("/static/buffett-crno-belo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.hero.cards--light .hero-text ul {
+  display: block; /* Da je vertikalno */
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.hero.cards--light .hero-text ul li {
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* Zamakni podseznam */
+.hero.cards--light .hero-text ul ul {
+  padding-left: 20px;
+}
+
+.hero-text dl {
+  margin-top: 2rem;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+canvas {
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}
+
+.gurufocus {
+  margin-top: 4rem;
+}
+
+#dcf {
+  margin-top: 2rem;
+}
+
+.image-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.image-center p {
+  margin-top: 0.5rem;
+  color: #828283;
+}
+
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #38393b;
+  list-style: none;
+  padding: 0;
+  min-width: 120px;
+}
+
+.nav-links .dropdown:hover .sub-menu {
+  display: block;
+}
+
+.nav-links .sub-menu li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 8px 15px;
+  display: block;
+}
+
+.nav-links .sub-menu li a:hover {
+  color: #3fd820;
+}
+
+@media (max-width: 768px) {
+  .nav-links .sub-menu {
+    position: static; /* Stack below parent on mobile */
+    width: 100%;
+  }
 }

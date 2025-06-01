@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cena</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../slogi/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <header class="header header--dark">
+        <div class="center header-inner">
+          <a href="../index/index.html">
+            <img
+              src="../../static/logo-1.png"
+              alt=""
+              width="200px"
+              height="auto"
+            />
+          </a>
+          <ul class="nav-links">
+            <li><a href="../temelji/temelji.html">temelji</a></li>
+            <li><a href="../osebe/osebe.html">osebe</a></li>
+            <li class="dropdown">
+              <a>podjetje</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="../podjetje/tekmovalna-prednost.html"
+                    >Tekmovalna prednost</a
+                  >
+                </li>
+                <li><a href="../podjetje/finance.html">Finance</a></li>
+                <li>
+                  <a href="../podjetje/vodstvo.html">Vodstvo</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a>Nakup</a>
+              <ul class="sub-menu">
+                <li><a href="../nakup/nakup.html">Nakup</a></li>
+                <li><a href="../nakup/vrednost.html">Vrednost</a></li>
+                <li><a href="../nakup/cena.html">Cena</a></li>
+              </ul>
+            </li>
+            <li><a href="../lastnosti/lastnosti.html">lastnosti</a></li>
+            <li><a href="../prodaja/prodaja.html">prodaja</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero hero--dark">
+          <div class="center intro-text">
+            <div class="hero-text">
+              <h2>Cena delnice</h2>
+              <p>
+                Ceno delnice določi ponudba in povpraševanje po delnici, torej
+                koliko ljudi hoče prodati in koliko kupiti delnico. Ta cena je
+                večino časa dokaj pravilna, vendar v depresijah in evforijah
+                trga se lahko močno odmakne od svoje realne vrednosti. To
+                odstopanje je za nas priložnost.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="hero cards--light">
+          <div class="center-column intro-text">
+            <h1 class="cards-title">Cena delnice Intel od 1995 do 2003</h1>
+            <div class="flexbox">
+              <div class="hero-text">
+                <dl>
+                  <dt>1995</dt>
+                  <dd>$2.84</dd>
+                  <dt>1996</dt>
+                  <dd>$4.81</dd>
+                  <dt>1997</dt>
+                  <dd>$7.76</dd>
+                  <dt>1998</dt>
+                  <dd>$8.09</dd>
+                  <dt>1999</dt>
+                  <dd>$11.26</dd>
+                  <dt>2000</dt>
+                  <dd>$18.83</dd>
+                  <dt>2001</dt>
+                  <dd>$12.05</dd>
+                  <dt>2002</dt>
+                  <dd>$8.28</dd>
+                  <dt>2003</dt>
+                  <dd>$12.06</dd>
+                </dl>
+              </div>
+              <canvas id="stockChart" width="600" height="400"></canvas>
+              <script>
+                const canvas = document.getElementById("stockChart");
+                const ctx = canvas.getContext("2d");
+
+                ctx.beginPath();
+                ctx.strokeStyle = "#3fd820";
+                ctx.lineWidth = 2;
+
+                ctx.moveTo(50, 300);
+                ctx.lineTo(100, 250);
+                ctx.lineTo(150, 280);
+                ctx.lineTo(250, 200);
+                ctx.lineTo(350, 260);
+                ctx.lineTo(450, 180);
+                ctx.lineTo(500, 220);
+                ctx.lineTo(550, 150);
+
+                ctx.stroke();
+              </script>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="space"></div>
+      <footer class="footer--dark footer">© Marcel</footer>
+      <script></script>
+    </div>
+  </body>
+</html>
